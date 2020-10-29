@@ -1,2 +1,2 @@
-# Reacty
-A full reaction Discord bot
+# Simply
+A creative Discord bot
