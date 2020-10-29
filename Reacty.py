@@ -1,9 +1,11 @@
 import discord
 
-bot = discord.Client()
+class MyClient(discord.Client):
+    async def on_ready(self):
+        print('Logged on as {0}!'.format(self.user))
 
-jeton = 'NzcxMDk0MTMyNTI4NjQ0MTc4.X5nHXw.NVP0uRlgkJeWvFKwdDm0xfw_UiY'
+    async def on_message(self, message):
+        print('Message from {0.author}: {0.content}'.format(message))
 
-print("Lancement du bot Reacty...")
-
-bot.run(jeton)
+client = MyClient()
+client.run('Token')
