@@ -2,5 +2,5 @@
 A creative Discord bot !
 
 Things Added:
--Website Added
--adding commands to the Bot
+      -Website Added
+      -adding commands to the Bot
